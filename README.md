@@ -56,26 +56,35 @@ AI_Digital_Risk_Advisory_System/
 │   ├── processor.py        # Forensics: EasyOCR & PyMuPDF integration
 │   └── database.py         # Persistence: SQLite CRUD Operations
 ├── Models/                 # Storage: Local pre-trained model weights
-└── requirements.txt        # Dependencies: Required Python libraries
-
+└── requirements.txt        # Dependencies: Required Python libraries 
+```
+---
 
 ## 🛠️ 3. Installation Guide
 Environment Setup
 Bash
 # 1. Create virtual environment
+```text
 python -m venv .venv
+```
 
 # 2. Activate environment (Windows)
+```
 .\venv\Scripts\activate
+```
 
 # 3. Activate environment (Mac/Linux)
+```
 source .venv/bin/activate
+```
 Library Installation
 [!NOTE]
 This project utilizes torch and transformers. A stable internet connection is required for the initial setup to fetch the Spam-Bert-Uncased weights (approx. 260MB).
 
 Bash
+```
 pip install -r requirements.txt
+```
 📊 4. Database Schema
 <table align="center">
 <tr>
