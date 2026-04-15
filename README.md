@@ -60,7 +60,7 @@ AI_Digital_Risk_Advisory_System/
 ```
 ---
 
-🛠️ 3. Local Setup & Execution
+## 🛠️ 3. Local Setup & Execution
 Follow these steps precisely to get the environment running on your local machine.
 
 Step 1: Clone the Repository
@@ -68,7 +68,8 @@ Open your terminal or command prompt and run:
 
 Bash
 ```
-git clone [https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git](https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git)
+git clone https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git ```
+```
 cd ShieldAI-Risk-Advisory
 ```
 Step 2: Initialize Virtual Environment
