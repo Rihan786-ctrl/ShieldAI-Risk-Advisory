@@ -46,9 +46,9 @@
 AI_Digital_Risk_Advisory_System/
 ├── app.py                  # Main Orchestrator: Sidebar & Navigation logic
 ├── Pages/
-│   ├── Analyze.py     # Deep Engine: Multi-tab UI (Text/PDF/Image)
-│   ├── History.py     # Logs: SQLite connector for historical review
-│   └── Analytics.py   # Insights: Plotly-powered risk trend visualization
+│   ├── Analyze.py          # Deep Engine: Multi-tab UI (Text/PDF/Image)
+│   ├── History.py          # Logs: SQLite connector for historical review
+│   └── Analytics.py        # Insights: Plotly-powered risk trend visualization
 ├── scripts/
 │   ├── model_inference.py  # Deep Learning: DistilBERT Transformer management
 │   ├── rules.py            # Heuristics: Regex patterns & Metadata checks
@@ -56,35 +56,57 @@ AI_Digital_Risk_Advisory_System/
 │   ├── processor.py        # Forensics: EasyOCR & PyMuPDF integration
 │   └── database.py         # Persistence: SQLite CRUD Operations
 ├── Models/                 # Storage: Local pre-trained model weights
-└── requirements.txt        # Dependencies: Required Python libraries 
+└── requirements.txt        # Dependencies: Required Python libraries
 ```
 ---
 
-## 🛠️ 3. Installation Guide
-Environment Setup
+🛠️ 3. Local Setup & Execution
+Follow these steps precisely to get the environment running on your local machine.
+
+Step 1: Clone the Repository
+Open your terminal or command prompt and run:
+
 Bash
-# 1. Create virtual environment
-```text
+```
+git clone [https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git](https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git)
+cd ShieldAI-Risk-Advisory
+```
+Step 2: Initialize Virtual Environment
+Create a sandbox for the project dependencies to avoid conflicts.
+
+Bash
+# Create the environment
+```
 python -m venv .venv
 ```
 
-# 2. Activate environment (Windows)
+# Activate on Windows
 ```
 .\venv\Scripts\activate
 ```
 
-# 3. Activate environment (Mac/Linux)
+# Activate on Mac/Linux
 ```
 source .venv/bin/activate
 ```
-Library Installation
+
+Step 3: Install Dependencies
 [!NOTE]
-This project utilizes torch and transformers. A stable internet connection is required for the initial setup to fetch the Spam-Bert-Uncased weights (approx. 260MB).
+This project requires Torch and Transformers. The first run will download the Spam-Bert-Uncased model (~260MB). Ensure you have a stable internet connection.
 
 Bash
 ```
 pip install -r requirements.txt
 ```
+Step 4: Launch the Application
+Start the Streamlit server to open the dashboard in your browser.
+
+Bash
+```
+streamlit run app.py
+```
+---
+
 📊 4. Database Schema
 <table align="center">
 <tr>
@@ -111,13 +133,3 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-<p align="center"><i>Developed for 3rd Year (AI & Data Science) Capstone Project</i></p>
