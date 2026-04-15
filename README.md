@@ -68,7 +68,8 @@ Open your terminal or command prompt and run:
 
 Bash
 ```
-git clone https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git ```
+git clone https://github.com/Rihan786-ctrl/ShieldAI-Risk-Advisory.git 
+```
 ```
 cd ShieldAI-Risk-Advisory
 ```
