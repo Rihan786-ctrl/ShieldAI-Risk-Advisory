@@ -4,3 +4,4 @@ __pycache__/
 temp.pdf
 temp.img
 .DS_Store
+risk_history.db
